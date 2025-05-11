@@ -2,8 +2,8 @@ import os
 from datetime import datetime, timedelta
 
 start_date = datetime(2025, 3, 1)
-days = 65
-commits_per_day = 3
+days = 60
+commits_per_day = 5
 
 for i in range(days):
     date = start_date + timedelta(days = i)
