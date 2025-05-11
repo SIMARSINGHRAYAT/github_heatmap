@@ -12,7 +12,7 @@ for i in range(days):
     for j in range(commits_per_day):
         with open("file.txt", "a") as f:
             f.write(f"{date} - commit {j}\n")
-        os.system("git addfile.txt")
+        os.system("git add file.txt")
         os.system(f'set GIT_AUTHOR_DATE={date_str}&& set GIT_COMMITER_DATE={date_str} && git commit -m "Commit {i}-{j}"')
 
 print("Commits done...........")
